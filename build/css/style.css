@@ -1,0 +1,228 @@
+body {
+  margin: 0;
+  font-family: "Circle";
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+p {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+.header__container {
+  max-width: 1600px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header__wrapper {
+  max-width: 1400px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.promo {
+  min-height: 620px;
+}
+.promo__container {
+  max-width: 1600px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.promo__wrapper {
+  max-width: 1400px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.promo__list {
+  display: flex;
+  justify-content: space-between;
+}
+.promo__item--info {
+  max-width: 634px;
+  width: 100%;
+  min-height: 395px;
+  display: flex;
+  flex-direction: column;
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.promo__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 71px;
+  text-transform: uppercase;
+  max-width: 634px;
+  width: 100%;
+  min-height: 142px;
+  color: #293560;
+}
+.promo__text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+  max-width: 545px;
+  width: 100%;
+  min-height: 116px;
+  margin-top: 19px;
+  color: #171F39;
+}
+.promo__button {
+  max-width: 311px;
+  width: 100%;
+  min-height: 68px;
+  background-color: #C6264B;
+  border-radius: 10px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  border: none;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 50px;
+}
+.promo__image {
+  max-width: 690px;
+  width: 100%;
+  max-height: 620px;
+}
+.companies {
+  padding-top: 150px;
+  min-height: 647px;
+}
+.companies__container {
+  max-width: 1600px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.companies__wrapper {
+  max-width: 1400px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.companies__wrapperTitle {
+  display: flex;
+  justify-content: space-between;
+  min-height: 142px;
+}
+.companies__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 71px;
+  text-transform: uppercase;
+  max-width: 901px;
+  width: 100%;
+  color: #293560;
+}
+.companies__titleSpan {
+  color: #C6264B;
+}
+.companies__from {
+  display: flex;
+  align-items: flex-end;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+  color: #171F39;
+}
+.companies__list {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+.companies__item {
+  max-width: 453px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 70px;
+}
+.companies__image {
+  max-width: 319px;
+  max-height: 301px;
+}
+.companies__text {
+  max-width: 100%;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 35px;
+  color: #171F39;
+}
+.letter {
+  padding-top: 150px;
+}
+.letter__container {
+  max-width: 1600px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #8A9CC0;
+  border-radius: 20px;
+  min-height: 626px;
+}
+.letter__wrapper {
+  max-width: 1400px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.letter__list {
+  display: flex;
+  justify-content: space-around;
+}
+.letter__item--info {
+  max-width: 547px;
+  width: 100%;
+  min-height: 396px;
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.letter__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 71px;
+  text-transform: uppercase;
+  color: #293560;
+  max-width: 540px;
+  min-height: 142px;
+}
+.letter__text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+  color: #293560;
+  max-width: 546px;
+  min-height: 116px;
+  margin-top: 30px;
+}
+.letter__button {
+  max-width: 311px;
+  width: 100%;
+  min-height: 68px;
+  background-color: #C6264B;
+  border-radius: 10px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  border: none;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 40px;
+}
+.letter__image {
+  max-width: 519px;
+  max-height: 434px;
+}

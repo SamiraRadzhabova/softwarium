@@ -1,0 +1,47 @@
+.promo {
+  min-height: 620px;
+  &__container {
+    .container();
+  }
+  &__wrapper {
+    .wrapper();
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item--info {
+    max-width: 634px;
+    width: 100%;
+    min-height: 395px;
+    display: flex;
+    flex-direction: column;
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  &__title {
+    .title();
+    max-width: 634px;
+    width: 100%;
+    min-height: 142px;
+    color: @middle-blue;
+  }
+  &__text {
+    .text();
+    max-width: 545px;
+    width: 100%;
+    min-height: 116px;
+    margin-top: 19px;
+    color: @dark-blue;
+  }
+  &__button {
+   .button();
+   margin-top: 50px;
+  }
+  &__image {
+    max-width: 690px;
+    width: 100%;
+    max-height: 620px;
+  }
+}
