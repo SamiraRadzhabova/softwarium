@@ -1,0 +1,39 @@
+.awards {
+  min-height: 986px;
+  padding-top: 150px;
+  &__container {
+    .container();
+  }
+  &__wrapper {
+    .wrapper();
+  }
+  &__title{
+    .title();
+    color: @middle-blue;
+    margin-bottom: 80px;
+  }
+  &__list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__item{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item--center{
+    justify-content: center;
+  }
+  &__imageBlock{
+    max-width: 264px;
+    width: 100%;
+    min-height: 265px;
+    display: flex;
+  }
+  &__image{
+    margin: auto;
+    max-width: 160px;
+    max-height: 161px;
+    align-items: center;
+  }
+}
