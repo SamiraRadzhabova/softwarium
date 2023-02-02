@@ -90,7 +90,13 @@
     font-size: 16px;
     line-height: 24px;
     text-transform: uppercase;
-    border: none;
+    border-color: $grey;
+    cursor: pointer;
+    &:hover{
+      background-color: $middle-blue;
+      border-color: $white;
+      color: $white;
+    }
   }
   &__wrapperPolicy {
     display: flex;
@@ -131,6 +137,12 @@
     font-size: 18px;
     line-height: 27px;
     color: $white;
+  }
+  &__link{
+    color: $white;
+    &:hover{
+      text-decoration: underline;
+    }
   }
   &__spanLeftBlock {
     font-weight: 700;

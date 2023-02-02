@@ -1,13 +1,35 @@
 .header {
+  padding-top: 30px;
+  min-height: 77px;
   &__container {
     @include container;
   }
   &__wrapper {
     @include wrapper;
+    border-bottom: 1px solid $grey;
   }
-  &__wrapperLogo{
+  &__wrapperMain{
     display: flex;
     align-items: center;
+  }
+  &__wrapperLogo {
+    display: flex;
+    align-items: center;
+  }
+  &__list{
+    display: flex;
+    align-items: center;
+    max-width: 853px;
+    width: 100%;
+    justify-content: space-between;
+    margin-left: 115px;
+  }
+  &__link {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: $middle-blue;
+    cursor: pointer;
   }
   &__button {
     background: $middle-blue;
@@ -15,11 +37,16 @@
     border-radius: 20px;
     max-width: 142px;
     width: 100%;
-    min-height: 40px;
+    height: 40px;
     color: $white;
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
     text-transform: uppercase;
+    margin-left: 50px;
+    cursor: pointer;
+    &:hover {
+      background-color: $light-blue;
+    }
   }
 }

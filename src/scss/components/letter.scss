@@ -50,6 +50,10 @@
   &__button {
     @include button;
     margin-top: 40px;
+    cursor: pointer;
+    &:hover{
+     background-color: $dark-red;
+    }
   }
   &__image {
     max-width: 519px;

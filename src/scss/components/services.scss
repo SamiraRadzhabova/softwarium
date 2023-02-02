@@ -89,6 +89,10 @@
     font-weight: 700;
     line-height: 29px;
     color: $dark-blue;
+    cursor: pointer;
+    &:hover{
+      color: $light-blue;
+    }
   }
   &__label--java{
     max-width: 217px;
@@ -130,5 +134,9 @@
     font-weight: 700;
     line-height: 24px;
     text-transform: uppercase;
+    cursor: pointer;
+    &:hover{
+      background-color: $middle-blue;
+    }
   }
 }

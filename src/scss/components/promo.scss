@@ -37,8 +37,15 @@
   &__button {
     @include button;
    margin-top: 50px;
+   cursor: pointer;
+   &:hover{
+    background-color: $dark-red;
+   }
   }
   &__image {
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
     max-width: 690px;
     width: 100%;
     max-height: 620px;

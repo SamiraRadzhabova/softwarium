@@ -24,6 +24,9 @@
     border: none;
     display: flex;
     justify-content: space-around;
+    &:hover{
+      background-color: $dark-red;
+    }
   }
   &__label {
     font-weight: 700;
