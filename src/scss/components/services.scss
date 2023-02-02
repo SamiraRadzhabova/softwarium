@@ -1,0 +1,134 @@
+.services {
+  padding-top: 150px;
+  min-height: 929px;
+  &__container {
+    @include container;
+  }
+  &__wrapper {
+    @include wrapper;
+  }
+  &__title {
+    @include title;
+    color: $middle-blue;
+    margin-bottom: 80px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__item {
+    display: flex;
+    justify-content: space-around;
+  }
+  &__wrapperBlock {
+    max-width: 453px;
+    width: 100%;
+    min-height: 314px;
+    border: 1px solid $light-blue-opacity;
+    border-radius: 20px;
+    display: flex;
+  }
+  &__wrapperInfo{
+    max-width: 363px;
+    width: 100%;
+    min-height: 196px;
+    margin: auto;
+  }
+  &__wrapperCenter {
+    max-width: 363px;
+    width: 100%;
+    min-height: 223px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__wrapperCenter--net, &__wrapperCenter--microsoft, &__wrapperCenter--ios{
+    min-height: 196px;
+  }
+  &__wrapperCenter--azure{
+    min-height: 169px;
+  }
+  &__wrapperCenter--android{
+    min-height: 142px;
+  }
+  &__wrapperTitle{
+    display: flex;
+    max-width: 276px;
+    width: 100%;
+    min-height: 58px;
+  }
+  &__wrapperTitle--java{
+    max-width: 283px;
+    @include services;
+  }
+  &__wrapperTitle--net{
+    max-width: 276px;
+    @include services;
+  }
+  &__wrapperTitle--microsoft{
+    max-width: 369px;
+    @include services;
+  }
+  &__wrapperTitle--azure{
+    max-width: 287px;
+    @include services;
+  }
+  &__wrapperTitle--android{
+    max-width: 280px;
+    @include services;
+  }
+  &__wrapperTitle--ios{
+    max-width: 209px;
+    @include services;
+  }
+  &__label{
+    width: 100%;
+    min-height: 58px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 29px;
+    color: $dark-blue;
+  }
+  &__label--java{
+    max-width: 217px;
+  }
+  &__label--net{
+    max-width: 217px;
+  }
+  &__label--microsoft{
+    max-width: 312px;
+  }
+  &__label--azure{
+    max-width: 217px;
+  }
+  &__label--android{
+    max-width: 217px;
+  }
+  &__label--ios{
+    max-width: 148px;
+  }
+  &__text{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    color: $dark-blue;
+  }
+  &__button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    max-width: 235px;
+    width: 100%;
+    min-height: 65px;
+    background-color: $light-blue;
+    border: none;
+    border-radius: 10px;
+    color: $white;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+}

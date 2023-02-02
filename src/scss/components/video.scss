@@ -1,0 +1,51 @@
+.video {
+  padding-top: 150px;
+  &__container {
+    @include container;
+  }
+  &__wrapperImage {
+    position: relative;
+  }
+  &__image {
+    max-width: 100%;
+    width: 100%;
+  }
+  &__button {
+    cursor: pointer;
+    top: 46%;
+    left: 41%;
+    position: absolute;
+    margin: auto;
+    max-width: 290px;
+    width: 100%;
+    min-height: 70px;
+    background-color: $red;
+    border-radius: 50px;
+    border: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  &__label {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: $white;
+    margin: auto;
+  }
+  &__round {
+    display: flex;
+    width: 46px;
+    height: 46px;
+    background-color: $white;
+    margin: auto;
+    border-radius: 50%;
+    position: relative;
+  }
+  &__span {
+    margin: auto;
+    border-top: 5.75px solid transparent;
+    border-left: 11.5px solid $red;
+    border-bottom: 5.75px solid transparent;
+  }
+}
