@@ -1,25 +1,46 @@
 .services {
   padding-top: 150px;
   min-height: 929px;
+  @media screen and (max-width: $mobile) {
+    min-height: 2167px;
+    padding-top: 100px;
+  }
   &__container {
     @include container;
+    @media screen and (max-width: $mobile) {
+      max-width: 375px;
+    }
   }
   &__wrapper {
     @include wrapper;
+    padding: 0 15px;
+    @media screen and (max-width: $mobile) {
+      max-width: 345px;
+      padding: 0;
+    }
   }
   &__title {
     @include title;
     color: $middle-blue;
     margin-bottom: 80px;
+    @media screen and (max-width: $mobile) {
+      margin-bottom: 50px;
+      font-size: 36px;
+      line-height: 53px;
+    }
   }
   &__list {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   &__item {
-    display: flex;
-    justify-content: space-around;
+    max-width: 453px;
+    width: 100%;
+    @media screen and (max-width: $mobile) {
+      max-width: 345px;
+    }
   }
   &__wrapperBlock {
     max-width: 453px;
@@ -28,12 +49,20 @@
     border: 1px solid $light-blue-opacity;
     border-radius: 20px;
     display: flex;
+    @media screen and (max-width: $mobile) {
+      max-width: 345px;
+      min-height: 301px;
+    }
   }
   &__wrapperInfo{
     max-width: 363px;
     width: 100%;
     min-height: 196px;
     margin: auto;
+    @media screen and (max-width: $mobile) {
+      max-width: 285px;
+      min-height: 205px;
+    }
   }
   &__wrapperCenter {
     max-width: 363px;
@@ -42,6 +71,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @media screen and (max-width: $mobile) {
+      max-width: 285px;
+    }
   }
   &__wrapperCenter--net, &__wrapperCenter--microsoft, &__wrapperCenter--ios{
     min-height: 196px;
@@ -137,6 +169,9 @@
     cursor: pointer;
     &:hover{
       background-color: $middle-blue;
+    }
+    @media screen and (max-width: $mobile) {
+      max-width: 100%;
     }
   }
 }

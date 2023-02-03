@@ -1,7 +1,13 @@
 .video {
   padding-top: 150px;
+  @media screen and (max-width: $mobile) {
+    padding-top: 76px;
+  }
   &__container {
     @include container;
+    @media screen and (max-width: $mobile) {
+      max-width: 375px;
+    }
   }
   &__wrapperImage {
     position: relative;
@@ -9,6 +15,15 @@
   &__image {
     max-width: 100%;
     width: 100%;
+    @media screen and (max-width: $mobile) {
+      display: none;
+    }
+  }
+  &__imageMobile{
+    display: none;
+    @media screen and (max-width: $mobile) {
+      display: block;
+    }
   }
   &__button {
     cursor: pointer;

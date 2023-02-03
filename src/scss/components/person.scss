@@ -7,11 +7,7 @@
     min-height: 904px;
     display: flex;
   }
-  &__list {
-    margin: auto;
-  }
   &__item {
-    max-width: 849px;
     width: 100%;
     min-height: 624px;
     display: flex;
@@ -31,6 +27,7 @@
     line-height: 35px;
     text-align: center;
     color: $middle-blue;
+    margin: auto;
   }
   &__wrapperInfo {
     max-width: 358px;
@@ -45,9 +42,22 @@
     text-align: center;
     color: $middle-blue;
   }
-  &__info{
+  &__info {
     @include text;
     color: $dark-grey;
     text-align: center;
+  }
+  .splide {
+    max-width: 1100px;
+    margin: auto;
+  }
+  .splide__pagination {
+    bottom: -50px;
+  }
+  .splide__pagination__page{
+    background: $blue-grey;
+  }
+  .splide__pagination__page.is-active {
+    background: $middle-blue;
   }
 }

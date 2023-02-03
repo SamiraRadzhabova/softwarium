@@ -1,22 +1,41 @@
 .letter {
   padding-top: 150px;
   min-height: 626px;
+  @media screen and (max-width: $mobile) {
+    padding-top: 100px;
+    min-height: 897px;
+  }
   &__container {
     @include container;
     min-height: 626px;
+    @media screen and (max-width: $mobile) {
+      max-width: 375px;
+      min-height: 897px;
+    }
   }
   &__wrapper {
     @include wrapper;
     min-height: 626px;
     background-color: $grey-blue;
-    z-index: -1;
     position: relative;
     border-radius: 20px;
+    @media screen and (max-width: $mobile) {
+      max-width: 345px;
+      min-height: 897px;
+    }
   }
   &__list {
     display: flex;
     justify-content: space-around;
     min-height: 626px;
+    padding: 0 20px;
+    @media screen and (max-width: $mobile) {
+      max-width: 265px;
+      margin: auto;
+      padding: 0;
+      min-height: 897px;
+      flex-direction: column;
+    }
   }
   &__item--info {
     max-width: 547px;
@@ -26,11 +45,19 @@
     flex-direction: column;
     margin-top: auto;
     margin-bottom: auto;
+    @media screen and (max-width: $mobile) {
+      max-width: 265px;
+    }
   }
   &__item--image {
     margin-top: auto;
     margin-bottom: auto;
     display: block;
+    @media screen and (max-width: $mobile) {
+      margin: auto;
+      margin-top: 0px;
+      margin-bottom: 91px;
+    }
   }
   &__title {
     @include title;
@@ -38,6 +65,11 @@
     width: 100%;
     min-height: 142px;
     color: $middle-blue;
+    @media screen and (max-width: $mobile) {
+      max-width: 265px;
+      font-size: 36px;
+      line-height: 53px;
+    }
   }
   &__text {
     @include text;
@@ -46,13 +78,22 @@
     min-height: 116px;
     margin-top: 19px;
     color: $dark-blue;
+    @media screen and (max-width: $mobile) {
+      max-width: 265px;
+      margin-top: 25px;
+      font-size: 18px;
+      line-height: 27px;
+    }
   }
   &__button {
     @include button;
     margin-top: 40px;
     cursor: pointer;
-    &:hover{
-     background-color: $dark-red;
+    &:hover {
+      background-color: $dark-red;
+    }
+    @media screen and (max-width: $mobile) {
+      min-height: 68px;
     }
   }
   &__image {

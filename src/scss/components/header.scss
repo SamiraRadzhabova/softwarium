@@ -11,6 +11,7 @@
   &__wrapperMain{
     display: flex;
     align-items: center;
+    padding: 0 20px;
   }
   &__wrapperLogo {
     display: flex;
@@ -30,6 +31,9 @@
     line-height: 27px;
     color: $middle-blue;
     cursor: pointer;
+    &:hover{
+      color: $light-blue;
+    }
   }
   &__button {
     background: $middle-blue;
