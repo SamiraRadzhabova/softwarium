@@ -1,8 +1,8 @@
 .letter {
-  padding-top: 150px;
+  margin-top: 150px;
   min-height: 626px;
   @media screen and (max-width: $mobile) {
-    padding-top: 100px;
+    margin-top: 100px;
     min-height: 897px;
   }
   &__container {
@@ -19,22 +19,24 @@
     background-color: $grey-blue;
     position: relative;
     border-radius: 20px;
+    padding: 0 15px;
     @media screen and (max-width: $mobile) {
       max-width: 345px;
       min-height: 897px;
+      padding: 0;
     }
   }
   &__list {
     display: flex;
     justify-content: space-around;
     min-height: 626px;
-    padding: 0 20px;
     @media screen and (max-width: $mobile) {
       max-width: 265px;
       margin: auto;
-      padding: 0;
       min-height: 897px;
       flex-direction: column;
+      padding-top: 60px;
+      padding-bottom: 91px;
     }
   }
   &__item--info {
@@ -55,8 +57,8 @@
     display: block;
     @media screen and (max-width: $mobile) {
       margin: auto;
-      margin-top: 0px;
-      margin-bottom: 91px;
+      margin-top: 50px;
+      margin-bottom: 0px;
     }
   }
   &__title {

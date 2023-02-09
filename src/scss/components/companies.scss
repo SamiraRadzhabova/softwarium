@@ -1,11 +1,11 @@
 .companies {
   min-height: 647px;
   @media screen and (min-width: 1033px) {
-    padding-top: 150px;
+    margin-top: 150px;
   }
   @media screen and (max-width: $mobile) {
-    padding-top: 100px;
-    min-height: 1535px;
+    margin-top: 100px;
+    max-height: 1515px;
   }
   &__container {
     @include container;
@@ -15,15 +15,16 @@
   }
   &__wrapper {
     @include wrapper;
+    padding: 0 15px;
     @media screen and (max-width: $mobile) {
       max-width: 345px;
+      padding: 0;
     }
   }
   &__wrapperTitle {
     display: flex;
     justify-content: space-between;
     min-height: 142px;
-    padding: 0 20px;
     @media screen and (max-width: $mobile) {
       min-height: 208px;
       flex-direction: column;
@@ -64,12 +65,13 @@
     margin-top: 80px;
     display: flex;
     justify-content: space-between;
-    padding: 0 15px;
     @media screen and (max-width: $mobile) {
       margin-top: 50px;
       flex-direction: column;
       padding: 0;
-      min-height: 1380px;
+      min-height: 1280px;
+      align-items: center;
+      justify-content: flex-start;
     }
   }
   &__item {
@@ -81,7 +83,24 @@
     gap: 70px;
     @media screen and (max-width: $mobile) {
       max-width: 307px;
+      // gap: 55px;
+    }
+  }
+  &__item--heart{
+    @media screen and (max-width: $mobile) {
       gap: 55px;
+    }
+  }
+  &__item--airpline{
+    @media screen and (max-width: $mobile) {
+      margin-top: 50px;
+      gap: 40px;
+    }
+  }
+  &__item--supply{
+    @media screen and (max-width: $mobile) {
+      margin-top: 30px;
+      gap: 63px;
     }
   }
   &__image {

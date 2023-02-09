@@ -1,7 +1,7 @@
 .video {
-  padding-top: 150px;
+  margin-top: 150px;
   @media screen and (max-width: $mobile) {
-    padding-top: 76px;
+    margin-top: 76px;
   }
   &__container {
     @include container;
@@ -27,8 +27,9 @@
   }
   &__button {
     cursor: pointer;
-    top: 46%;
-    left: 41%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
     position: absolute;
     margin: auto;
     max-width: 290px;

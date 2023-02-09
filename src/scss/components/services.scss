@@ -1,9 +1,9 @@
 .services {
-  padding-top: 150px;
+  margin-top: 150px;
   min-height: 929px;
   @media screen and (max-width: $mobile) {
     min-height: 2167px;
-    padding-top: 100px;
+    margin-top: 100px;
   }
   &__container {
     @include container;
@@ -42,6 +42,12 @@
       max-width: 345px;
     }
   }
+ &__brText{
+    display: block;
+    @media screen and (max-width: $mobile) {
+      display: none;
+    }
+  }
   &__wrapperBlock {
     max-width: 453px;
     width: 100%;
@@ -62,6 +68,9 @@
     @media screen and (max-width: $mobile) {
       max-width: 285px;
       min-height: 205px;
+      margin-top: 35px;
+      margin-left: 30px;
+      margin-right: 30px;
     }
   }
   &__wrapperCenter {
@@ -73,6 +82,8 @@
     justify-content: space-between;
     @media screen and (max-width: $mobile) {
       max-width: 285px;
+      gap: 15px;
+      justify-content: flex-start;
     }
   }
   &__wrapperCenter--net, &__wrapperCenter--microsoft, &__wrapperCenter--ios{
@@ -89,6 +100,9 @@
     max-width: 276px;
     width: 100%;
     min-height: 58px;
+    @media screen and (max-width: $mobile) {
+      gap: 11px;
+    }
   }
   &__wrapperTitle--java{
     max-width: 283px;
@@ -172,6 +186,7 @@
     }
     @media screen and (max-width: $mobile) {
       max-width: 100%;
+      margin-top: 40px;
     }
   }
 }

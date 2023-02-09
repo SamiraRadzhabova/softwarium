@@ -1,11 +1,19 @@
 .person {
-  padding-top: 150px;
+  margin-top: 150px;
   min-height: 904px;
+  @media screen and (max-width: $mobile) {
+    margin-top: 100px;
+    min-height: 786px;
+  }
   &__container {
     @include container;
     background-color: $light-grey;
     min-height: 904px;
     display: flex;
+    @media screen and (max-width: $mobile) {
+      max-width: 375px;
+      min-height: 786px;
+    }
   }
   &__item {
     width: 100%;
@@ -13,10 +21,18 @@
     display: flex;
     flex-direction: column;
     gap: 50px;
+    padding: 0 15px;
+    @media screen and (max-width: $mobile) {
+      gap: 0;
+    }
   }
   &__image {
     margin-left: auto;
     margin-right: auto;
+    @media screen and (max-width: $mobile) {
+      width: 130px;
+      height: 130px;
+    }
   }
   &__text {
     max-width: 849px;
@@ -28,6 +44,14 @@
     text-align: center;
     color: $middle-blue;
     margin: auto;
+    @media screen and (max-width: $mobile) {
+      margin-top: 50px;
+      margin-bottom: 30px;
+      font-size: 18px;
+      line-height: 27px;
+      max-width: 345px;
+      min-height: 331px;
+    }
   }
   &__wrapperInfo {
     max-width: 358px;
@@ -41,11 +65,19 @@
     @include info;
     text-align: center;
     color: $middle-blue;
+    @media screen and (max-width: $mobile) {
+      font-size: 20px;
+      line-height: 29px;
+    }
   }
   &__info {
     @include text;
     color: $dark-grey;
     text-align: center;
+    @media screen and (max-width: $mobile) {
+      font-size: 16px;
+      line-height: 24px;
+    }
   }
   .splide {
     max-width: 1100px;
@@ -53,11 +85,29 @@
   }
   .splide__pagination {
     bottom: -50px;
+    @media screen and (max-width: $mobile) {
+      bottom: -15px;
+    }
   }
-  .splide__pagination__page{
+  .splide__pagination__page {
     background: $blue-grey;
+    @media screen and (max-width: $mobile) {
+      width: 6px;
+      height: 6px;
+    }
   }
   .splide__pagination__page.is-active {
     background: $middle-blue;
+  }
+  .splide__arrow{
+    @media screen and (max-width: $mobile) {
+      top:101%;
+      width: 1.5em;
+      height: 1.5em;
+    }
+  }
+  .splide__arrow path {
+    stroke: $light-blue;
+    fill: $light-blue;
   }
 }

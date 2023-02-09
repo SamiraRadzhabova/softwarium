@@ -1,9 +1,9 @@
 .promo {
   max-height: 620px;
-  padding-top: 46px;
+  margin-top: 46px;
   @media screen and (max-width: $mobile) {
-    max-height: 762px;
-    padding-top: 50px;
+    max-height: 862px;
+    margin-top: 50px;
   }
   &__container {
     @include container;
@@ -13,14 +13,15 @@
   }
   &__wrapper {
     @include wrapper;
+    padding: 0 15px;
     @media screen and (max-width: $mobile) {
       max-width: 345px;
+      padding: 0;
     }
   }
   &__list {
     display: inline-flex;
     gap: 100px;
-    padding: 0 20px;
     @media screen and (max-width: $mobile) {
       flex-direction: column;
       padding: 0;

@@ -1,17 +1,16 @@
 .header {
-  padding-top: 30px;
+  margin-top: 30px;
   min-height: 77px;
   &__container {
     @include container;
   }
   &__wrapper {
     @include wrapper;
-    border-bottom: 1px solid $grey;
+    padding: 0 15px;
   }
   &__wrapperMain{
     display: flex;
     align-items: center;
-    padding: 0 20px;
   }
   &__wrapperLogo {
     display: flex;
@@ -53,4 +52,13 @@
       background-color: $light-blue;
     }
   }
+  &__hr{
+    background-color: $grey;
+    margin-top: 24px;
+    max-width: 1400px;
+    height: 1px;
+    width: 100%;
+  }
+
+  // Success Stories
 }

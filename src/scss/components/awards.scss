@@ -1,9 +1,9 @@
 .awards {
   min-height: 950px;
-  padding-top: 150px;
+  margin-top: 150px;
   @media screen and (max-width: $mobile) {
     min-height: 933px;
-    padding-top: 100px;
+    margin-top: 100px;
   }
   &__container {
     @include container;
@@ -16,6 +16,7 @@
     padding: 0 15px;
     @media screen and (max-width: $mobile) {
       max-width: 345px;
+      padding: 0;
     }
   }
   &__title {
@@ -26,6 +27,7 @@
       margin-bottom: 50px;
       font-size: 36px;
       line-height: 53px;
+      margin-left: 15px;
     }
   }
   &__list {
@@ -40,13 +42,11 @@
   &__item {
     display: inline-flex;
     gap: 20px;
+    flex-wrap: wrap;
     @media screen and (max-width: $mobile) {
       flex-wrap: wrap;
       gap: 15px;
     }
-  }
-  &__item--center {
-    justify-content: center;
   }
   &__imageBlock {
     max-width: 264px;
@@ -57,6 +57,16 @@
       max-width: 165px;
       min-height: 130px;
     }
+  }
+  &__imageCenter{
+    display: flex;
+    max-width: 548px;
+    width: 100%;
+    gap: 20px;
+    @media screen and (min-width: 1430px) {
+       margin: auto;
+    }
+   
   }
   &__link {
     margin: auto;
