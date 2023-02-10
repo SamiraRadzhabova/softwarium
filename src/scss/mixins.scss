@@ -43,3 +43,12 @@
   display: flex;
   justify-content: space-between;
 }
+@mixin link{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: $middle-blue;
+  &:hover{
+    color: $light-blue;
+  }
+}

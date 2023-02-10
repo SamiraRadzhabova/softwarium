@@ -11,18 +11,39 @@
   &__wrapperMain{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    // gap: 100px;
   }
-  &__wrapperLogo {
+  // &__wrapperLogo {
+  //   display: flex;
+  //   align-items: center;
+  // }
+  &__wrapperNav{
     display: flex;
     align-items: center;
+    max-width: 1045px;
+    width: 100%;
+    // justify-content: space-between;
+    gap: 40px;
+    justify-content: flex-end;
   }
   &__list{
     display: flex;
     align-items: center;
     max-width: 853px;
     width: 100%;
+    // justify-content: flex-end;
     justify-content: space-between;
-    margin-left: 115px;
+   @media screen and (max-width: 1340px){
+    max-width: 753px;
+   }
+   @media screen and (max-width: 1220px){
+    max-width: 653px;
+   }
+   @media screen and (max-width: 1125px){
+    max-width: 580px;
+   }
+    // margin-left: 115px;
   }
   &__link {
     font-weight: 400;
@@ -46,7 +67,7 @@
     font-size: 16px;
     line-height: 24px;
     text-transform: uppercase;
-    margin-left: 50px;
+    // margin-left: 50px;
     cursor: pointer;
     &:hover {
       background-color: $light-blue;
