@@ -1,6 +1,9 @@
 .awards {
   min-height: 950px;
   margin-top: 150px;
+  @media screen and (max-width: $tablet) {
+    margin-top: 100px;
+  }
   @media screen and (max-width: $mobile) {
     min-height: 933px;
     margin-top: 100px;
@@ -23,6 +26,11 @@
     @include title;
     color: $middle-blue;
     margin-bottom: 80px;
+    @media screen and (max-width: $tablet) {
+      margin-bottom: 50px;
+      font-size: 36px;
+      line-height: 53px;
+    }
     @media screen and (max-width: $mobile) {
       margin-bottom: 50px;
       font-size: 36px;
@@ -43,6 +51,9 @@
     display: inline-flex;
     gap: 20px;
     flex-wrap: wrap;
+    @media screen and (max-width: $tablet) {
+      justify-content: center;
+    }
     @media screen and (max-width: $mobile) {
       flex-wrap: wrap;
       gap: 15px;
@@ -53,6 +64,9 @@
     width: 100%;
     min-height: 265px;
     display: flex;
+    @media screen and (max-width: $tablet) {
+      min-height: 200px;
+    }
     @media screen and (max-width: $mobile) {
       max-width: 165px;
       min-height: 130px;
@@ -66,7 +80,19 @@
     @media screen and (min-width: 1430px) {
        margin: auto;
     }
-   
+    @media screen and (max-width: 577px) {
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+   @media screen and (max-width: $mobile) {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+ }
+    @media screen and (max-width: 344px) {
+      flex-wrap: wrap;
+      justify-content: center;
+      
+   }
   }
   &__link {
     margin: auto;

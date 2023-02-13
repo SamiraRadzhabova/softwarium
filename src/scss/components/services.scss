@@ -1,9 +1,12 @@
 .services {
   margin-top: 150px;
   min-height: 929px;
+  @media screen and (max-width: $tablet) {
+    min-height: 929px;
+    margin-top: 100px;
+  }
   @media screen and (max-width: $mobile) {
     min-height: 2167px;
-    margin-top: 100px;
   }
   &__container {
     @include container;
@@ -16,13 +19,18 @@
     padding: 0 15px;
     @media screen and (max-width: $mobile) {
       max-width: 345px;
-      padding: 0;
+      padding: 0 15px;
     }
   }
   &__title {
     @include title;
     color: $middle-blue;
     margin-bottom: 80px;
+    @media screen and (max-width: $tablet) {
+      font-size: 36px;
+      line-height: 53px;
+      margin-bottom: 50px;
+    }
     @media screen and (max-width: $mobile) {
       margin-bottom: 50px;
       font-size: 36px;
@@ -38,6 +46,9 @@
   &__item {
     max-width: 453px;
     width: 100%;
+    @media screen and (max-width: 958px) {
+      max-width: 100%;
+    }
     @media screen and (max-width: $mobile) {
       max-width: 345px;
     }
@@ -55,6 +66,9 @@
     border: 1px solid $light-blue-opacity;
     border-radius: 20px;
     display: flex;
+    @media screen and (max-width: 958px) {
+      max-width: 100%;
+    }
     @media screen and (max-width: $mobile) {
       max-width: 345px;
       min-height: 301px;
@@ -65,6 +79,10 @@
     width: 100%;
     min-height: 196px;
     margin: auto;
+    @media screen and (max-width: 958px) {
+      max-width: 100%;
+      margin: 35px 30px ;
+    }
     @media screen and (max-width: $mobile) {
       max-width: 285px;
       min-height: 205px;
@@ -80,10 +98,20 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @media screen and (max-width: 958px) {
+      max-width: 100%;
+      justify-content: flex-start;
+      gap: 20px;
+    }
     @media screen and (max-width: $mobile) {
       max-width: 285px;
       gap: 15px;
       justify-content: flex-start;
+    }
+  }
+  br {
+    @media screen and (max-width: 958px) {
+      display: none;
     }
   }
   &__wrapperCenter--net, &__wrapperCenter--microsoft, &__wrapperCenter--ios{
@@ -163,6 +191,9 @@
     font-weight: 400;
     line-height: 27px;
     color: $dark-blue;
+    @media screen and (max-width: 958px) {
+      max-width: 100%;
+    }
   }
   &__button{
     display: block;
@@ -183,6 +214,9 @@
     cursor: pointer;
     &:hover{
       background-color: $middle-blue;
+    }
+    @media screen and (max-width: 958px) {
+      max-width: 100%;
     }
     @media screen and (max-width: $mobile) {
       max-width: 100%;

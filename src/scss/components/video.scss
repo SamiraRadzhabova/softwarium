@@ -1,7 +1,9 @@
 .video {
   margin-top: 150px;
+  @media screen and (max-width: $tablet) {
+    margin-top: 100px;
+  }
   @media screen and (max-width: $mobile) {
-    margin-top: 76px;
   }
   &__container {
     @include container;
@@ -23,6 +25,8 @@
     display: none;
     @media screen and (max-width: $mobile) {
       display: block;
+      max-width: 100%;
+      width: 100%;
     }
   }
   &__button {

@@ -21,19 +21,25 @@
   &__wrapper {
     @include wrapper;
     padding: 0 15px;
-    
+
     @media screen and (max-width: $tablet) {
       max-width: 1020px;
     }
     @media screen and (max-width: $mobile) {
       max-width: 345px;
-      padding: 0;
+      padding: 0 15px;
     }
   }
   &__wrapperTitle {
     display: flex;
     justify-content: space-between;
     min-height: 142px;
+    @media screen and (max-width: $tablet) {
+      min-height: 105px;
+    }
+    @media screen and (max-width: 950px) {
+      min-height: 105px;
+    }
     @media screen and (max-width: $mobile) {
       min-height: 208px;
       flex-direction: column;
@@ -80,6 +86,7 @@
     @media screen and (max-width: $tablet) {
       margin-top: 50px;
       flex-wrap: wrap;
+      gap: 30px;
     }
     @media screen and (max-width: $mobile) {
       flex-direction: column;
@@ -97,25 +104,26 @@
     align-items: center;
     gap: 70px;
     @media screen and (max-width: $tablet) {
-      max-width: 100%;
+      max-width:100%;
+      gap: 50px;
     }
     @media screen and (max-width: $mobile) {
       max-width: 307px;
       // gap: 55px;
     }
   }
-  &__item--heart{
+  &__item--heart {
     @media screen and (max-width: $mobile) {
       gap: 55px;
     }
   }
-  &__item--airpline{
+  &__item--airpline {
     @media screen and (max-width: $mobile) {
       margin-top: 50px;
       gap: 40px;
     }
   }
-  &__item--supply{
+  &__item--supply {
     @media screen and (max-width: $tablet) {
       width: 100%;
       max-width: 100%;
@@ -148,18 +156,18 @@
     }
     @media screen and (max-width: $tablet) {
       font-size: 20px;
-line-height: 29px;
+      line-height: 29px;
     }
     @media screen and (max-width: $mobile) {
       font-size: 20px;
-line-height: 29px;
+      line-height: 29px;
     }
   }
-  &__link--supply{
+  &__link--supply {
     @media screen and (max-width: $tablet) {
       font-size: 20px;
-line-height: 29px;
-max-width: 400px;
+      line-height: 29px;
+      max-width: 400px;
     }
   }
 }

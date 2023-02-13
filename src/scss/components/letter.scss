@@ -42,6 +42,7 @@
     justify-content: space-around;
     min-height: 626px;
     @media screen and (max-width: $tablet) {
+      flex-direction: column;
       min-height: 450px;
       padding:70px 40px 80px 40px;
     }
@@ -50,8 +51,7 @@
       margin: auto;
       min-height: 897px;
       flex-direction: column;
-      padding-top: 60px;
-      padding-bottom: 91px;
+      padding: 60px 0 91px 0;
     }
   }
   &__item--info {
@@ -63,7 +63,8 @@
     margin-top: auto;
     margin-bottom: auto;
     @media screen and (max-width: $tablet) {
-      max-width: 465px;
+      max-width:100%;
+      min-height: 240px;
     }
     @media screen and (max-width: $mobile) {
       max-width: 265px;
@@ -73,6 +74,11 @@
     margin-top: auto;
     margin-bottom: auto;
     display: block;
+    @media screen and (max-width: $tablet) {
+      margin: auto;
+      margin-top: 50px;
+      margin-bottom: 0px;
+    }
     @media screen and (max-width: $mobile) {
       margin: auto;
       margin-top: 50px;
@@ -86,10 +92,10 @@
     min-height: 142px;
     color: $middle-blue;
     @media screen and (max-width: $tablet) {
-      max-width: 465px;
+      max-width: 100%;
       font-size: 36px;
       line-height: 53px;
-      min-height: 112px;
+      min-height:50px;
     }
     @media screen and (max-width: $mobile) {
       max-width: 265px;
@@ -105,10 +111,11 @@
     margin-top: 19px;
     color: $dark-blue;
     @media screen and (max-width: $tablet) {
-      max-width: 400px;
+      max-width: 100%;
       margin-top: 25px;
       font-size: 18px;
       line-height: 27px;
+      min-height: 60px;
     }
     @media screen and (max-width: $mobile) {
       max-width: 265px;
@@ -125,7 +132,7 @@
       background-color: $dark-red;
     }
     @media screen and (max-width: $tablet) {
-      max-width: 345px;
+      max-width: 100%;
       margin-top: 35px;
     }
     @media screen and (max-width: $mobile) {

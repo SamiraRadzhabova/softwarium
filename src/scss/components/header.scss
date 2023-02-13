@@ -8,42 +8,70 @@
     @include wrapper;
     padding: 0 15px;
   }
-  &__wrapperMain{
+  &__wrapperMain {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    // gap: 100px;
+    @media screen and (max-width: $tablet) {
+      // display: none;
+      max-width: 100%;
+      position: relative;
+      background-color: $white;
+    }
   }
-  // &__wrapperLogo {
-  //   display: flex;
-  //   align-items: center;
-  // }
-  &__wrapperNav{
+  &__wrapperNav {
     display: flex;
     align-items: center;
     max-width: 1045px;
     width: 100%;
-    // justify-content: space-between;
     gap: 40px;
     justify-content: flex-end;
+    @media screen and (max-width: $tablet) {
+      display: none;
+      max-width: 100%;
+      position: absolute;
+      background-color: $white;
+      flex-direction: column;
+      align-items: flex-start;
+      top: 50px;
+      padding-top: 60px;
+     
+    }
   }
-  &__list{
+  &__list {
     display: flex;
     align-items: center;
     max-width: 853px;
     width: 100%;
-    // justify-content: flex-end;
     justify-content: space-between;
-   @media screen and (max-width: 1340px){
-    max-width: 753px;
-   }
-   @media screen and (max-width: 1220px){
-    max-width: 653px;
-   }
-   @media screen and (max-width: 1125px){
-    max-width: 580px;
-   }
-    // margin-left: 115px;
+    @media screen and (max-width: 1340px) {
+      max-width: 753px;
+    }
+    @media screen and (max-width: 1220px) {
+      max-width: 653px;
+    }
+    @media screen and (max-width: $tablet) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+      max-width: 100%;
+    }
+  }
+  &__item{
+    @media screen and (max-width: $tablet) {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+  &__logo {
+    @media screen and (max-width: 1136px) {
+      max-width: 165px;
+      height: 35px;
+    }
+    @media screen and (max-width: $tablet) {
+      max-width: 165px;
+      height: 35px;
+    }
   }
   &__link {
     font-weight: 400;
@@ -51,8 +79,42 @@
     line-height: 27px;
     color: $middle-blue;
     cursor: pointer;
-    &:hover{
+    &:hover {
       color: $light-blue;
+    }
+    @media screen and (max-width: $tablet) {
+      font-size: 20px;
+      max-width: 100%;
+      font-weight: bold;
+    }
+  }
+  &__navMain{
+    @media screen and (max-width: $tablet) {
+      display: none;
+    }
+  }
+  &__nav{
+    display: none;
+    @media screen and (max-width: $tablet) {
+      display: block;
+      text-align: end;
+    }
+  }
+  &__link--nav{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and (max-width: $tablet) {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+  &__wrapperTablet {
+    display: none;
+    @media screen and (max-width: $tablet) {
+      display: flex;
+      gap: 15px;
     }
   }
   &__button {
@@ -67,19 +129,24 @@
     font-size: 16px;
     line-height: 24px;
     text-transform: uppercase;
-    // margin-left: 50px;
     cursor: pointer;
     &:hover {
       background-color: $light-blue;
     }
+    @media screen and (max-width: $tablet) {
+      max-width: 100%;
+      margin-top: 440px;
+      margin-bottom: 40px;
+    }
   }
-  &__hr{
+  &__hr {
     background-color: $grey;
     margin-top: 24px;
     max-width: 1400px;
     height: 1px;
     width: 100%;
+    @media screen and (max-width: $tablet) {
+      display: none;
+    }
   }
-
-  // Success Stories
 }
