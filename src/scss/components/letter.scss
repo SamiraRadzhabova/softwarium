@@ -1,13 +1,20 @@
 .letter {
   margin-top: 150px;
   min-height: 626px;
-  @media screen and (max-width: $mobile) {
+  @media screen and (max-width: $tablet) {
     margin-top: 100px;
+    min-height: 560px;
+  }
+  @media screen and (max-width: $mobile) {
     min-height: 897px;
   }
   &__container {
     @include container;
     min-height: 626px;
+    @media screen and (max-width: $tablet) {
+      max-width: 1030px;
+      min-height: 560px;
+    }
     @media screen and (max-width: $mobile) {
       max-width: 375px;
       min-height: 897px;
@@ -20,6 +27,10 @@
     position: relative;
     border-radius: 20px;
     padding: 0 15px;
+    @media screen and (max-width: $tablet) {
+      max-width: 1010px;
+      min-height: 560px;
+    }
     @media screen and (max-width: $mobile) {
       max-width: 345px;
       min-height: 897px;
@@ -30,6 +41,10 @@
     display: flex;
     justify-content: space-around;
     min-height: 626px;
+    @media screen and (max-width: $tablet) {
+      min-height: 450px;
+      padding:70px 40px 80px 40px;
+    }
     @media screen and (max-width: $mobile) {
       max-width: 265px;
       margin: auto;
@@ -47,6 +62,9 @@
     flex-direction: column;
     margin-top: auto;
     margin-bottom: auto;
+    @media screen and (max-width: $tablet) {
+      max-width: 465px;
+    }
     @media screen and (max-width: $mobile) {
       max-width: 265px;
     }
@@ -67,6 +85,12 @@
     width: 100%;
     min-height: 142px;
     color: $middle-blue;
+    @media screen and (max-width: $tablet) {
+      max-width: 465px;
+      font-size: 36px;
+      line-height: 53px;
+      min-height: 112px;
+    }
     @media screen and (max-width: $mobile) {
       max-width: 265px;
       font-size: 36px;
@@ -80,6 +104,12 @@
     min-height: 116px;
     margin-top: 19px;
     color: $dark-blue;
+    @media screen and (max-width: $tablet) {
+      max-width: 400px;
+      margin-top: 25px;
+      font-size: 18px;
+      line-height: 27px;
+    }
     @media screen and (max-width: $mobile) {
       max-width: 265px;
       margin-top: 25px;
@@ -93,6 +123,10 @@
     cursor: pointer;
     &:hover {
       background-color: $dark-red;
+    }
+    @media screen and (max-width: $tablet) {
+      max-width: 345px;
+      margin-top: 35px;
     }
     @media screen and (max-width: $mobile) {
       min-height: 68px;
