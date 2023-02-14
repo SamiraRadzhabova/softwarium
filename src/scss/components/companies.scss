@@ -9,26 +9,8 @@
   }
   @media screen and (max-width: $mobile) {
   }
-  &__container {
+  .container {
     @include container;
-    @media screen and (max-width: $tablet) {
-      max-width: 1050px;
-    }
-    @media screen and (max-width: $mobile) {
-      max-width: 375px;
-    }
-  }
-  &__wrapper {
-    @include wrapper;
-    padding: 0 15px;
-
-    @media screen and (max-width: $tablet) {
-      max-width: 1020px;
-    }
-    @media screen and (max-width: $mobile) {
-      max-width: 345px;
-      padding: 0 15px;
-    }
   }
   &__wrapperTitle {
     display: flex;

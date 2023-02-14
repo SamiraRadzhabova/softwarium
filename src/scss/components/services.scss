@@ -8,20 +8,20 @@
   @media screen and (max-width: $mobile) {
     min-height: 2167px;
   }
-  &__container {
+  .container {
     @include container;
     @media screen and (max-width: $mobile) {
       max-width: 375px;
     }
   }
-  &__wrapper {
-    @include wrapper;
-    padding: 0 15px;
-    @media screen and (max-width: $mobile) {
-      max-width: 345px;
-      padding: 0 15px;
-    }
-  }
+  // &__wrapper {
+  //   @include wrapper;
+  //   padding: 0 15px;
+  //   @media screen and (max-width: $mobile) {
+  //     max-width: 345px;
+  //     padding: 0 15px;
+  //   }
+  // }
   &__title {
     @include title;
     color: $middle-blue;

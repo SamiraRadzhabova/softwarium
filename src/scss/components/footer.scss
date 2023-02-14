@@ -7,7 +7,7 @@
   @media screen and (max-width: $mobile) {
     min-height: 1171px;
   }
-  &__container {
+  .container {
     @include container;
     min-height: 1312px;
     height: 100%;
@@ -18,22 +18,6 @@
     }
     @media screen and (max-width: $mobile) {
       max-width: 375px;
-      min-height: 1171px;
-    }
-  }
-  &__wrapper {
-    @include wrapper;
-    min-height: 1312px;
-    height: 100%;
-    padding: 0 15px;
-    @media screen and (max-width: $tablet) {
-      padding: 0 15px;
-      max-width: 1030px;
-      min-height: 971px;
-    }
-    @media screen and (max-width: $mobile) {
-      padding: 0 15px;
-      max-width: 345px;
       min-height: 1171px;
     }
   }

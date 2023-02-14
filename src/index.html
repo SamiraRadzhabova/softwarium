@@ -10,84 +10,84 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__container">
-        <div class="header__wrapper">
-          <div class="header__wrapperMain">
-            <div class="header__wrapperLogo">
-              <a href="index.html" class="header__logoLink"
-                ><img src="svg/logo.svg" alt="logo" class="header__logo"
-              /></a>
-            </div>
-            <div class="header__wrapperNav">
-              <ul class="header__list">
-                <li class="header__item">
-                  <a class="header__link">Your Benefits</a>
+      <div class="container">
+          <div class="header__wrapper">
+              <a href="index.html" class="header__logo">
+                <img src="svg/logo.svg" alt="logo" class="header__image"/>
+              </a>
+            <div class="header__nav">
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a class="nav__link">Your Benefits</a>
                 </li>
-                <li class="header__item">
-                  <a class="header__link header__link--nav"
+                <li class="nav__item">
+                  <a class="nav__link nav__link--option"
                     >Success Stories
                     <img
                       src="svg/navMain.svg"
                       alt="navigation"
-                      class="header__navMain" />
-                    <img src="svg/nav.svg" alt="navigation" class="header__nav"
+                      class="nav__vector" />
+                    <img src="svg/nav.svg" alt="navigation" class="nav__vector-left"
                   /></a>
                 </li>
-                <li class="header__item">
-                  <a class="header__link header__link--nav"
+                <li class="nav__item">
+                  <a class="nav__link nav__link--option"
                     >Expertise
                     <img
                       src="svg/navMain.svg"
                       alt="navigation"
-                      class="header__navMain" /><img
+                      class="nav__vector" />
+                      <img
                       src="svg/nav.svg"
                       alt="navigation"
-                      class="header__nav"
+                      class="nav__vector-left"
                   /></a>
                 </li>
-                <li class="header__item">
-                  <a class="header__link header__link--nav"
+                <li class="nav__item">
+                  <a class="nav__link nav__link--option"
                     >Industries
                     <img
                       src="svg/navMain.svg"
                       alt="navigation"
-                      class="header__navMain" /><img
+                      class="nav__vector" /><img
                       src="svg/nav.svg"
                       alt="navigation"
-                      class="header__nav"
+                      class="nav__vector-left"
                   /></a>
                 </li>
-                <li class="header__item">
-                  <a class="header__link header__link--nav"
+                <li class="nav__item">
+                  <a class="nav__link nav__link--option"
                     >Services
                     <img
                       src="svg/navMain.svg"
                       alt="navigation"
-                      class="header__navMain" /><img
+                      class="nav__vector" /><img
                       src="svg/nav.svg"
                       alt="navigation"
-                      class="header__nav"
+                      class="nav__vector-left"
                   /></a>
                 </li>
-                <li class="header__item">
-                  <a class="header__link">Blog</a>
+                <li class="nav__item">
+                  <a class="nav__link">Blog</a>
                 </li>
-                <li class="header__item">
-                  <a class="header__link header__link--nav"
+                <li class="nav__item">
+                  <a class="nav__link nav__link--option"
                     >Company
                     <img
                       src="svg/navMain.svg"
                       alt="navigation"
-                      class="header__navMain" /><img
+                      class="nav__vector" /><img
                       src="svg/nav.svg"
                       alt="navigation"
-                      class="header__nav"
+                      class="nav__vector-left"
                   /></a>
                 </li>
               </ul>
-              <button class="header__button">contact us</button>
-            </div>
-            <div class="header__wrapperTablet">
+            </nav>
+            <button class="header__button">contact us</button>
+          </div>
+            <div class="header__hamburger">
               <svg
                 width="40"
                 height="40"
@@ -153,11 +153,9 @@
                 </defs>
               </svg>
             </div>
-          </div>
-          <div class="header__hr"></div>
         </div>
         <!-- Success Stories -->
-        <!-- <div class="header__stories stories">
+        <div class="header__stories stories">
             <ul class="stories__list">
               <li class="stories__item stories__item--left">
                 <div class="stories__nav">
@@ -214,10 +212,10 @@
               </div>
               </li>
             </ul>
-          </div> -->
+          </div>
         <!-- End Success Stories-->
         <!--  Expertise -->
-        <!-- <div class="header__expertise expertise">
+        <div class="header__expertise expertise">
             <ul class="expertise__list">
               <li class="expertise__item expertise__item--left">
                 <div class="expertise__wrapperLeft">
@@ -260,10 +258,10 @@
               </div>
               </li>
             </ul>
-          </div> -->
+          </div>
         <!-- End Expertise-->
         <!--  Industries -->
-        <!-- <div class="header__industries industries">
+        <div class="header__industries industries">
             <ul class="industries__list">
               <li class="industries__item industries__item--left">
                 <div class="industries__wrapperLeft">
@@ -321,10 +319,10 @@
                 </div>
               </li>
             </ul>
-          </div> -->
+          </div>
         <!-- End Industries-->
         <!--  Services -->
-        <!-- <div class="header__service service">
+        <div class="header__service service">
             <ul class="service__list">
               <li class="service__item service__item--left">
                 <div class="service__nav">
@@ -362,10 +360,10 @@
                 </div>
               </li>
             </ul>
-          </div> -->
+          </div>
         <!-- End Services-->
         <!-- Company -->
-        <!-- <div class="header__company company">
+        <div class="header__company company">
             <ul class="company__list">
               <li class="company__item company__item--left">
                 <div class="company__nav">
@@ -431,14 +429,13 @@
               </div>
               </li>
             </ul>
-          </div> -->
+          </div>
         <!-- End Company-->
       </div>
     </header>
     <main>
       <section class="promo">
-        <div class="promo__container">
-          <div class="promo__wrapper">
+        <div class="container">
             <ul class="promo__list">
               <li class="promo__item promo__item--info">
                 <p class="promo__title">
@@ -461,11 +458,9 @@
               </li>
             </ul>
           </div>
-        </div>
       </section>
       <section class="companies">
-        <div class="companies__container">
-          <div class="companies__wrapper">
+        <div class="container">
             <div class="companies__wrapperTitle">
               <p class="companies__title">
                 TRUSTED BY <br />
@@ -508,10 +503,9 @@
               </li>
             </ul>
           </div>
-        </div>
       </section>
       <section class="video">
-        <div class="video__container">
+        <div class="container">
           <div class="video__wrapperImage">
             <img
               src="img/homepage/video.png"
@@ -531,8 +525,7 @@
         </div>
       </section>
       <section class="letter">
-        <div class="letter__container">
-          <div class="letter__wrapper">
+        <div class="container">
             <ul class="letter__list">
               <li class="letter__item letter__item--info">
                 <p class="letter__title">Ready to find out more?</p>
@@ -552,12 +545,10 @@
                 />
               </li>
             </ul>
-          </div>
         </div>
       </section>
       <section class="awards">
-        <div class="awards__container">
-          <div class="awards__wrapper">
+        <div class="container">
             <p class="awards__title">awards</p>
             <ul class="awards__list">
               <li class="awards__item">
@@ -658,15 +649,13 @@
                         class="awards__image"
                     /></a>
                   </div>
-                </div>
               </li>
             </ul>
           </div>
         </div>
       </section>
       <section class="services">
-        <div class="services__container">
-          <div class="services__wrapper">
+        <div class="container">
             <p class="services__title">Featured Services</p>
             <ul class="services__list">
               <li class="services__item">
@@ -847,10 +836,9 @@
             </ul>
             <button class="services__button">show more</button>
           </div>
-        </div>
       </section>
       <section class="person">
-        <div class="person__container">
+        <div class="container">
           <div class="splide" role="group" aria-label="Splideの基本的なHTML">
             <div class="splide__track">
               <ul class="splide__list">
@@ -907,8 +895,7 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__container">
-        <div class="footer__wrapper">
+      <div class="container">
           <div class="footer__wrapperLogo">
             <a href="index.html" class="footer__linkLogo"
               ><img
@@ -1077,7 +1064,6 @@
             </p>
           </div>
         </div>
-      </div>
     </footer>
     <script src="libs/splide.min.js"></script>
     <script>

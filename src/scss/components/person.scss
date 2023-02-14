@@ -9,7 +9,7 @@
     margin-top: 100px;
     min-height: 856px;
   }
-  &__container {
+  .container {
     @include container;
     background-color: $light-grey;
     min-height: 904px;

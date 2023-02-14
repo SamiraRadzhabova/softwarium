@@ -8,9 +8,11 @@
   @media screen and (max-width: $mobile) {
     min-height: 897px;
   }
-  &__container {
+  .container {
     @include container;
     min-height: 626px;
+    border-radius: 20px;
+    background-color: $grey-blue;
     @media screen and (max-width: $tablet) {
       max-width: 1030px;
       min-height: 560px;
@@ -20,23 +22,23 @@
       min-height: 897px;
     }
   }
-  &__wrapper {
-    @include wrapper;
-    min-height: 626px;
-    background-color: $grey-blue;
-    position: relative;
-    border-radius: 20px;
-    padding: 0 15px;
-    @media screen and (max-width: $tablet) {
-      max-width: 1010px;
-      min-height: 560px;
-    }
-    @media screen and (max-width: $mobile) {
-      max-width: 345px;
-      min-height: 897px;
-      padding: 0;
-    }
-  }
+  // &__wrapper {
+  //   @include wrapper;
+  //   min-height: 626px;
+  //   background-color: $grey-blue;
+  //   position: relative;
+  //   border-radius: 20px;
+  //   padding: 0 15px;
+  //   @media screen and (max-width: $tablet) {
+  //     max-width: 1010px;
+  //     min-height: 560px;
+  //   }
+  //   @media screen and (max-width: $mobile) {
+  //     max-width: 345px;
+  //     min-height: 897px;
+  //     padding: 0;
+  //   }
+  // }
   &__list {
     display: flex;
     justify-content: space-around;

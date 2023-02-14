@@ -5,7 +5,7 @@
   }
   @media screen and (max-width: $mobile) {
   }
-  &__container {
+  .container {
     @include container;
     @media screen and (max-width: $mobile) {
       max-width: 375px;

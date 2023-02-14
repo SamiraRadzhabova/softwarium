@@ -1,20 +1,23 @@
-@mixin container {
-  max-width: 1600px;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-@mixin wrapper {
+@mixin container{
   max-width: 1430px;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 15px;
 }
 @mixin title {
   font-weight: 700;
   font-size: 48px;
   line-height: 71px;
   text-transform: uppercase;
+}
+@mixin btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: $white;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 @mixin text {
   font-weight: 400;
