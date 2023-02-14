@@ -3,27 +3,19 @@
   @media screen and (max-width: $tablet) {
     margin-top: 100px;
   }
-  @media screen and (max-width: $mobile) {
-  }
-  .container {
-    @include container;
-    @media screen and (max-width: $mobile) {
-      max-width: 375px;
-    }
-  }
-  &__wrapperImage {
+  &__wrapper{
     position: relative;
   }
   &__image {
     max-width: 100%;
     width: 100%;
-    @media screen and (max-width: $mobile) {
+    @media screen and (max-width: 750px) {
       display: none;
     }
   }
-  &__imageMobile{
+  &__mobile{
     display: none;
-    @media screen and (max-width: $mobile) {
+    @media screen and (max-width: 750px) {
       display: block;
       max-width: 100%;
       width: 100%;

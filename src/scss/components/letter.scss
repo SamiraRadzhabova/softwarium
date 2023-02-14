@@ -8,8 +8,7 @@
   @media screen and (max-width: $mobile) {
     min-height: 897px;
   }
-  .container {
-    @include container;
+  &__wrapper {
     min-height: 626px;
     border-radius: 20px;
     background-color: $grey-blue;
@@ -22,37 +21,20 @@
       min-height: 897px;
     }
   }
-  // &__wrapper {
-  //   @include wrapper;
-  //   min-height: 626px;
-  //   background-color: $grey-blue;
-  //   position: relative;
-  //   border-radius: 20px;
-  //   padding: 0 15px;
-  //   @media screen and (max-width: $tablet) {
-  //     max-width: 1010px;
-  //     min-height: 560px;
-  //   }
-  //   @media screen and (max-width: $mobile) {
-  //     max-width: 345px;
-  //     min-height: 897px;
-  //     padding: 0;
-  //   }
-  // }
   &__list {
     display: flex;
     justify-content: space-around;
     min-height: 626px;
+    padding: 0 15px;
     @media screen and (max-width: $tablet) {
       flex-direction: column;
       min-height: 450px;
-      padding:70px 40px 80px 40px;
+      padding: 70px 40px 80px 40px;
     }
     @media screen and (max-width: $mobile) {
       max-width: 265px;
       margin: auto;
       min-height: 897px;
-      flex-direction: column;
       padding: 60px 0 91px 0;
     }
   }
@@ -81,11 +63,6 @@
       margin-top: 50px;
       margin-bottom: 0px;
     }
-    @media screen and (max-width: $mobile) {
-      margin: auto;
-      margin-top: 50px;
-      margin-bottom: 0px;
-    }
   }
   &__title {
     @include title;
@@ -98,11 +75,6 @@
       font-size: 36px;
       line-height: 53px;
       min-height:50px;
-    }
-    @media screen and (max-width: $mobile) {
-      max-width: 265px;
-      font-size: 36px;
-      line-height: 53px;
     }
   }
   &__text {
@@ -119,12 +91,6 @@
       line-height: 27px;
       min-height: 60px;
     }
-    @media screen and (max-width: $mobile) {
-      max-width: 265px;
-      margin-top: 25px;
-      font-size: 18px;
-      line-height: 27px;
-    }
   }
   &__button {
     @include button;
@@ -136,9 +102,6 @@
     @media screen and (max-width: $tablet) {
       max-width: 100%;
       margin-top: 35px;
-    }
-    @media screen and (max-width: $mobile) {
-      min-height: 68px;
     }
   }
   &__image {

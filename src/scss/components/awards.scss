@@ -6,10 +6,6 @@
   }
   @media screen and (max-width: $mobile) {
     min-height: 933px;
-    margin-top: 100px;
-  }
-  .container {
-    @include container;
   }
   &__title {
     @include title;
@@ -21,9 +17,6 @@
       line-height: 53px;
     }
     @media screen and (max-width: $mobile) {
-      margin-bottom: 50px;
-      font-size: 36px;
-      line-height: 53px;
       margin-left: 15px;
     }
   }
@@ -40,15 +33,13 @@
     display: inline-flex;
     gap: 20px;
     flex-wrap: wrap;
-    @media screen and (max-width: $tablet) {
-      justify-content: center;
-    }
+    justify-content: center;
     @media screen and (max-width: $mobile) {
       flex-wrap: wrap;
       gap: 15px;
     }
   }
-  &__imageBlock {
+  &__wrapper {
     max-width: 264px;
     width: 100%;
     min-height: 265px;
@@ -61,7 +52,7 @@
       min-height: 130px;
     }
   }
-  &__imageCenter{
+  &__center{
     display: flex;
     max-width: 548px;
     width: 100%;
@@ -75,11 +66,9 @@
    }
    @media screen and (max-width: $mobile) {
     flex-wrap: nowrap;
-    justify-content: flex-start;
  }
     @media screen and (max-width: 344px) {
       flex-wrap: wrap;
-      justify-content: center;
       
    }
   }

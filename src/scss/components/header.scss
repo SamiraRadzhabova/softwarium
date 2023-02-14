@@ -1,9 +1,6 @@
 .header {
   margin-top: 30px;
   min-height: 77px;
-  .container {
-    @include container;
-  }
   &__wrapper {
     display: flex;
     align-items: center;

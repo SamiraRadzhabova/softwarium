@@ -7,23 +7,14 @@
     margin-top: 100px;
     max-height: 1515px;
   }
-  @media screen and (max-width: $mobile) {
+  @media screen and (max-width: 1050px) {
+    margin-top: 100px;
   }
-  .container {
-    @include container;
-  }
-  &__wrapperTitle {
+  &__wrapper {
     display: flex;
     justify-content: space-between;
-    min-height: 142px;
-    @media screen and (max-width: $tablet) {
-      min-height: 105px;
-    }
-    @media screen and (max-width: 950px) {
-      min-height: 105px;
-    }
-    @media screen and (max-width: $mobile) {
-      min-height: 208px;
+    height: 100%;
+    @media screen and (max-width: 660px) {
       flex-direction: column;
     }
   }
@@ -37,11 +28,11 @@
       line-height: 53px;
       max-width: 545px;
     }
-    @media screen and (max-width: $mobile) {
+    @media screen and (max-width: 430px) {
       max-width: 345px;
     }
   }
-  &__titleSpan {
+  &__span {
     color: $red;
   }
   &__from {
@@ -55,7 +46,7 @@
       text-underline-offset: 6px;
       text-decoration-color: $middle-grey;
     }
-    @media screen and (max-width: $mobile) {
+    @media screen and (max-width: 430px) {
       font-size: 16px;
       line-height: 24px;
       text-transform: uppercase;
@@ -72,7 +63,6 @@
     }
     @media screen and (max-width: $mobile) {
       flex-direction: column;
-      padding: 0;
       min-height: 1280px;
       align-items: center;
       justify-content: flex-start;
@@ -84,14 +74,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 70px;
-    @media screen and (max-width: $tablet) {
-      max-width:100%;
-      gap: 50px;
+    justify-content: space-between;
+    @media screen and (max-width: 966px) {
+      max-width: 400px;
+    }
+    @media screen and (max-width: 860px) {
+      max-width: 350px;
+    }
+    @media screen and (max-width: 759px) {
+      max-width: 100%;
     }
     @media screen and (max-width: $mobile) {
       max-width: 307px;
-      // gap: 55px;
     }
   }
   &__item--heart {
@@ -109,14 +103,13 @@
     @media screen and (max-width: $tablet) {
       width: 100%;
       max-width: 100%;
-      margin-top: 15px;
     }
     @media screen and (max-width: $mobile) {
       margin-top: 30px;
       gap: 63px;
     }
   }
-  &__image {
+  &__picture {
     width: 100%;
     height: 100%;
     display: block;
@@ -140,15 +133,9 @@
       font-size: 20px;
       line-height: 29px;
     }
-    @media screen and (max-width: $mobile) {
-      font-size: 20px;
-      line-height: 29px;
-    }
   }
   &__link--supply {
     @media screen and (max-width: $tablet) {
-      font-size: 20px;
-      line-height: 29px;
       max-width: 400px;
     }
   }

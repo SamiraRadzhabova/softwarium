@@ -6,21 +6,7 @@
     min-height: 786px;
   }
   @media screen and (max-width: $mobile) {
-    margin-top: 100px;
     min-height: 856px;
-  }
-  .container {
-    @include container;
-    background-color: $light-grey;
-    min-height: 904px;
-    display: flex;
-    @media screen and (max-width: $tablet) {
-      min-height: 786px;
-    }
-    @media screen and (max-width: $mobile) {
-      max-width: 375px;
-      min-height: 786px;
-    }
   }
   &__item {
     width: 100%;
@@ -64,15 +50,11 @@
       min-height: 200px;
     }
     @media screen and (max-width: $mobile) {
-      margin-top: 50px;
-      margin-bottom: 30px;
-      font-size: 18px;
-      line-height: 27px;
       max-width: 345px;
       min-height: 331px;
     }
   }
-  &__wrapperInfo {
+  &__wrapper {
     max-width: 358px;
     width: 100%;
     display: flex;
@@ -101,9 +83,6 @@
   .splide {
     max-width: 1100px;
     margin: auto;
-    @media screen and (max-width: $tablet) {
-      // margin: 90px 0 0 0;
-    }
   }
   .splide__pagination {
     bottom: -50px;

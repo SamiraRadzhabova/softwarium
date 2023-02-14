@@ -8,20 +8,6 @@
   @media screen and (max-width: $mobile) {
     min-height: 2167px;
   }
-  .container {
-    @include container;
-    @media screen and (max-width: $mobile) {
-      max-width: 375px;
-    }
-  }
-  // &__wrapper {
-  //   @include wrapper;
-  //   padding: 0 15px;
-  //   @media screen and (max-width: $mobile) {
-  //     max-width: 345px;
-  //     padding: 0 15px;
-  //   }
-  // }
   &__title {
     @include title;
     color: $middle-blue;
@@ -30,11 +16,6 @@
       font-size: 36px;
       line-height: 53px;
       margin-bottom: 50px;
-    }
-    @media screen and (max-width: $mobile) {
-      margin-bottom: 50px;
-      font-size: 36px;
-      line-height: 53px;
     }
   }
   &__list {
@@ -59,7 +40,7 @@
       display: none;
     }
   }
-  &__wrapperBlock {
+  &__wrapper {
     max-width: 453px;
     width: 100%;
     min-height: 314px;
@@ -74,7 +55,7 @@
       min-height: 301px;
     }
   }
-  &__wrapperInfo{
+  &__info{
     max-width: 363px;
     width: 100%;
     min-height: 196px;
@@ -91,7 +72,7 @@
       margin-right: 30px;
     }
   }
-  &__wrapperCenter {
+  &__center {
     max-width: 363px;
     width: 100%;
     min-height: 223px;
@@ -114,16 +95,16 @@
       display: none;
     }
   }
-  &__wrapperCenter--net, &__wrapperCenter--microsoft, &__wrapperCenter--ios{
+  &__center--net, &__center--microsoft, &__center--ios{
     min-height: 196px;
   }
-  &__wrapperCenter--azure{
+  &__center--azure{
     min-height: 169px;
   }
-  &__wrapperCenter--android{
+  &__center--android{
     min-height: 142px;
   }
-  &__wrapperTitle{
+  &__block{
     display: flex;
     max-width: 276px;
     width: 100%;
@@ -132,31 +113,31 @@
       gap: 11px;
     }
   }
-  &__wrapperTitle--java{
+  &__block--java{
     max-width: 283px;
     @include services;
   }
-  &__wrapperTitle--net{
+  &__block--net{
     max-width: 276px;
     @include services;
   }
-  &__wrapperTitle--microsoft{
+  &__block--microsoft{
     max-width: 369px;
     @include services;
   }
-  &__wrapperTitle--azure{
+  &__block--azure{
     max-width: 287px;
     @include services;
   }
-  &__wrapperTitle--android{
+  &__block--android{
     max-width: 280px;
     @include services;
   }
-  &__wrapperTitle--ios{
+  &__block--ios{
     max-width: 209px;
     @include services;
   }
-  &__label{
+  &__link{
     width: 100%;
     min-height: 58px;
     font-size: 20px;
@@ -168,22 +149,13 @@
       color: $light-blue;
     }
   }
-  &__label--java{
+  &__link--main{
     max-width: 217px;
   }
-  &__label--net{
-    max-width: 217px;
-  }
-  &__label--microsoft{
+  &__link--microsoft{
     max-width: 312px;
   }
-  &__label--azure{
-    max-width: 217px;
-  }
-  &__label--android{
-    max-width: 217px;
-  }
-  &__label--ios{
+  &__link--ios{
     max-width: 148px;
   }
   &__text{
@@ -219,7 +191,6 @@
       max-width: 100%;
     }
     @media screen and (max-width: $mobile) {
-      max-width: 100%;
       margin-top: 40px;
     }
   }
